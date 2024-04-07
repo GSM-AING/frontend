@@ -1,7 +1,7 @@
 import * as S from "./style.ts";
 import menu from "../../assets/menu.svg";
 
-export default function Topbar(props: any) {
+export default function Topbar() {
   return (
     <S.Header>
       <h1>먀옹</h1>
