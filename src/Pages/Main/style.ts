@@ -4,7 +4,7 @@ export const CenterObject = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 250px;
   gap: 10px;
 `;
 
