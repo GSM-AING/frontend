@@ -4,7 +4,7 @@ export const CenterObject = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 200px;
   gap: 10px;
 `;
 
@@ -44,6 +44,8 @@ export const SecondObject = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 500px;
+  overflow: scroll;
+  margin-bottom: 200px;
 `;
 
 export const SecondMainText = styled.div`
@@ -51,5 +53,23 @@ export const SecondMainText = styled.div`
   font-style: normal;
   font-weight: 700;
   white-space: pre-wrap;
+
   line-height: normal;
+`;
+
+export const LineUpText = styled.div`
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 40px;
+`;
+
+export const LineText = styled.div`
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Pretendard;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
 `;

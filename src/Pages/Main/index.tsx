@@ -1,5 +1,6 @@
 import * as S from "./style.ts";
-
+import leftear from "../../assets/left-cat-ear.svg";
+import rightear from "../../assets/right-cat-ear.svg";
 export default function Home() {
   return (
     <div>
@@ -12,6 +13,10 @@ export default function Home() {
         </S.CenterButtonObject>
       </S.CenterObject>
       <S.SecondObject>
+        <S.CenterButtonObject>
+          <img src={leftear} width="80" height="80" alt="left" />
+          <img src={rightear} width="80" height="80" alt="right" />
+        </S.CenterButtonObject>
         <S.SecondMainText>
           오늘의
           <br />
@@ -19,6 +24,22 @@ export default function Home() {
           <br />
           어떠신가요?
         </S.SecondMainText>
+        <S.LineUpText>
+          <S.LineText>기쁨</S.LineText>
+          <S.LineText>슬픔</S.LineText>
+          <S.LineText>화남</S.LineText>
+          <S.LineText>흥분함</S.LineText>
+          <S.LineText>가슴뛰는</S.LineText>
+          <S.LineText>미묘한</S.LineText>
+        </S.LineUpText>
+        <S.LineUpText>
+          <S.LineText>지루한</S.LineText>
+          <S.LineText>놀라운</S.LineText>
+          <S.LineText>외로운</S.LineText>
+          <S.LineText>의기소침한</S.LineText>
+          <S.LineText>달콤한</S.LineText>
+          <S.LineText>초조한</S.LineText>
+        </S.LineUpText>
       </S.SecondObject>
     </div>
   );
