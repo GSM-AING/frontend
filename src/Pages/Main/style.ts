@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const CenterObject = styled.div`
   display: flex;
@@ -22,6 +22,20 @@ export const CenterButtonObject = styled.div`
   gap: 40px;
 `;
 
+export const CatEarObject = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin-bottom: 10px;
+`;
+
+export const ScrollDownObject = styled.div`
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const CenterButton = styled.div`
   width: 100px;
   height: 40px;
@@ -43,9 +57,8 @@ export const SecondObject = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 500px;
-  overflow: scroll;
-  margin-bottom: 200px;
+  margin-top: 150px;
+  margin-bottom: 140px;
 `;
 
 export const SecondMainText = styled.div`
@@ -53,23 +66,45 @@ export const SecondMainText = styled.div`
   font-style: normal;
   font-weight: 700;
   white-space: pre-wrap;
-
+  text-overflow: clip;
   line-height: normal;
 `;
 
-export const LineUpText = styled.div`
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 50px;
-  margin-top: 40px;
+const flowing = keyframes`
+  0% {
+    transform: translate3d(0  , 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 `;
 
-export const LineText = styled.div`
-  color: rgba(0, 0, 0, 0.5);
-  font-family: Pretendard;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+export const FlowBox = styled.div`
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+`;
+
+export const FlowWrap = styled.div`
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   white-space: nowrap;
+`;
+
+export const Flow = styled.div`
+  font-size: clamp(60px, 5vw, 8rem);
+  animation: ${flowing} 20s linear infinite;
+  span {
+    color: rgba(0, 0, 0, 0.5);
+
+    display: inline-block;
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 40px;
+    margin-left: 20px;
+  }
 `;

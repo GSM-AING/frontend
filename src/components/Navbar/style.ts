@@ -1,28 +1,45 @@
 import styled from "styled-components";
 
-export const Header = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  white-space: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
-`;
-
-export const TextMenu = styled.div`
+export const NavbarObject = styled.div`
+  background-color: black;
+  width: 100%;
+  height: 400px;
   display: flex;
   flex-direction: row;
-  gap: 51px;
-  @media screen and (max-width: 375px) {
-    display: none;
-  }
+  text-overflow: clip;
 `;
 
-export const ImageMenu = styled.div`
-  display: none;
-  @media screen and (max-width: 375px) {
-    display: block;
-  }
+export const MenuSubject = styled.div`
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+`;
+
+export const MenuObject = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px;
+`;
+
+export const MenuText = styled.div`
+  color: #fff;
+
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+`;
+
+export const SnsRound = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

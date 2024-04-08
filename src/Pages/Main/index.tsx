@@ -1,6 +1,7 @@
 import * as S from "./style.ts";
 import leftear from "../../assets/left-cat-ear.svg";
 import rightear from "../../assets/right-cat-ear.svg";
+import scrolldown from "../../assets/scroll.svg";
 export default function Home() {
   return (
     <div>
@@ -11,12 +12,16 @@ export default function Home() {
           <S.CenterButton>시작하기</S.CenterButton>
           <S.CenterTextButton>로그인하기</S.CenterTextButton>
         </S.CenterButtonObject>
+        <S.ScrollDownObject>
+          <img src={scrolldown} width="50" height="50" alt="left" />
+          <span>게속 보기</span>
+        </S.ScrollDownObject>
       </S.CenterObject>
       <S.SecondObject>
-        <S.CenterButtonObject>
+        <S.CatEarObject>
           <img src={leftear} width="80" height="80" alt="left" />
           <img src={rightear} width="80" height="80" alt="right" />
-        </S.CenterButtonObject>
+        </S.CatEarObject>
         <S.SecondMainText>
           오늘의
           <br />
@@ -24,22 +29,28 @@ export default function Home() {
           <br />
           어떠신가요?
         </S.SecondMainText>
-        <S.LineUpText>
-          <S.LineText>기쁨</S.LineText>
-          <S.LineText>슬픔</S.LineText>
-          <S.LineText>화남</S.LineText>
-          <S.LineText>흥분함</S.LineText>
-          <S.LineText>가슴뛰는</S.LineText>
-          <S.LineText>미묘한</S.LineText>
-        </S.LineUpText>
-        <S.LineUpText>
-          <S.LineText>지루한</S.LineText>
-          <S.LineText>놀라운</S.LineText>
-          <S.LineText>외로운</S.LineText>
-          <S.LineText>의기소침한</S.LineText>
-          <S.LineText>달콤한</S.LineText>
-          <S.LineText>초조한</S.LineText>
-        </S.LineUpText>
+        <S.FlowBox>
+          <S.FlowWrap>
+            <S.Flow>
+              <span>기쁨</span>
+              <span>슬픔</span>
+              <span>화남</span>
+              <span>흥분한</span>
+              <span>가슴뛰는</span>
+              <span>미묘한</span>
+              <span>안정된</span>
+              <span>감사한</span>
+              <span>자신감있는</span>
+              <span>열정적인</span>
+              <span>궁금한</span>
+              <span>지루한</span>
+              <span>놀라운</span>
+              <span>외로운</span>
+              <span>의기소침한</span>
+              <span>달콤한</span>
+            </S.Flow>
+          </S.FlowWrap>
+        </S.FlowBox>
       </S.SecondObject>
     </div>
   );

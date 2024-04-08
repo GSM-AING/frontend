@@ -1,18 +1,24 @@
 import * as S from "./style.ts";
-import menu from "../../assets/menu.svg";
-
+import instagramlogo from "../../assets/instagram.svg";
 export default function Topbar() {
   return (
-    <S.Header>
-      <h1>먀옹</h1>
-      <S.TextMenu>
-        <a>소개</a>
-        <a>캐릭터</a>
-        <a>서비스</a>
-      </S.TextMenu>
-      <S.ImageMenu>
-        <img src={menu} width="40" height="40" alt="menu" />
-      </S.ImageMenu>
-    </S.Header>
+    <S.NavbarObject>
+      <S.MenuObject>
+        <S.MenuSubject>제휴</S.MenuSubject>
+        <S.MenuText>도입문의</S.MenuText>
+        <S.MenuText>파트너쉽 신청</S.MenuText>
+      </S.MenuObject>
+      <S.MenuObject>
+        <S.MenuSubject>약관</S.MenuSubject>
+        <S.MenuText>개인정보처리약관</S.MenuText>
+        <S.MenuText>서비스 이용 약관</S.MenuText>
+      </S.MenuObject>
+      <S.MenuObject>
+        <S.MenuSubject>먀옹 </S.MenuSubject>
+        <S.SnsRound>
+          <img src={instagramlogo} alt="instagram" width="25" height="25" />
+        </S.SnsRound>
+      </S.MenuObject>
+    </S.NavbarObject>
   );
 }
