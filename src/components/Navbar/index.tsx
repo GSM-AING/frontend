@@ -12,9 +12,9 @@ export default function Topbar() {
         <S.MenuSubject>약관</S.MenuSubject>
         <S.MenuText>개인정보처리약관</S.MenuText>
         <S.MenuText>서비스 이용 약관</S.MenuText>
+        <S.MenuText>오픈소스 이용 약관</S.MenuText>
       </S.MenuObject>
       <S.MenuObject>
-        <S.MenuSubject>먀옹 </S.MenuSubject>
         <S.SnsRound>
           <img src={instagramlogo} alt="instagram" width="25" height="25" />
         </S.SnsRound>
