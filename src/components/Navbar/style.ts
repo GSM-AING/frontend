@@ -5,9 +5,9 @@ export const NavbarObject = styled.div`
   width: auto;
   height: 400px;
   display: grid;
-  grid-template-columns: 150px 150px 100px;
+  grid-template-columns: 90px 90;
   @media screen and (max-width: 375px) {
-    grid-template-rows: 150px 150px 100px;
+    grid-template-rows: 120px 120px;
   }
 `;
 

@@ -1,5 +1,5 @@
 import * as S from "./style.ts";
-import instagramlogo from "../../assets/instagram.svg";
+// import instagramlogo from "../../assets/instagram.svg";
 export default function Topbar() {
   return (
     <S.NavbarObject>
@@ -13,11 +13,6 @@ export default function Topbar() {
         <S.MenuText>개인정보처리약관</S.MenuText>
         <S.MenuText>서비스 이용 약관</S.MenuText>
         <S.MenuText>오픈소스 이용 약관</S.MenuText>
-      </S.MenuObject>
-      <S.MenuObject>
-        <S.SnsRound>
-          <img src={instagramlogo} alt="instagram" width="25" height="25" />
-        </S.SnsRound>
       </S.MenuObject>
     </S.NavbarObject>
   );
