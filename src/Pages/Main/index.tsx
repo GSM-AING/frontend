@@ -2,6 +2,7 @@ import * as S from "./style.ts";
 import leftear from "../../assets/left-cat-ear.svg";
 import rightear from "../../assets/right-cat-ear.svg";
 import scrolldown from "../../assets/scroll.svg";
+import cat from "../../assets/cat.svg";
 export default function Home() {
   return (
     <div>
@@ -14,7 +15,7 @@ export default function Home() {
         </S.CenterButtonObject>
         <S.ScrollDownObject>
           <img src={scrolldown} width="50" height="50" alt="left" />
-          <span>게속 보기</span>
+          <span>계속 보기</span>
         </S.ScrollDownObject>
       </S.CenterObject>
       <S.SecondObject>
@@ -23,12 +24,11 @@ export default function Home() {
           <img src={rightear} width="80" height="80" alt="right" />
         </S.CatEarObject>
         <S.SecondMainText>
-          오늘의
-          <br />
-          기분은
+          오늘의 기분은
           <br />
           어떠신가요?
         </S.SecondMainText>
+        <br />
         <S.FlowBox>
           <S.FlowWrap>
             <S.Flow>
@@ -51,6 +51,47 @@ export default function Home() {
             </S.Flow>
           </S.FlowWrap>
         </S.FlowBox>
+        <S.SecondObject>
+          <S.ThirdMainText>저와 함께 놀아봐요 :D</S.ThirdMainText>
+          <S.ThirdPageSubTextBox>
+            <S.ThirdPageSubText>
+              오늘 기분은 어떠세요? 괜찮다면 저와 함께해볼래요?
+            </S.ThirdPageSubText>
+          </S.ThirdPageSubTextBox>
+          <br />
+          <S.OutsideOptionBox>
+            <S.OptionBox>
+              <S.ThirdPageOptionText>
+                <span>일기 작성하기</span>
+              </S.ThirdPageOptionText>
+            </S.OptionBox>
+            <S.OptionBox>
+              <S.ThirdPageOptionText>
+                <span>노래 듣기</span>
+              </S.ThirdPageOptionText>
+            </S.OptionBox>
+            <S.OptionBox>
+              <S.ThirdPageOptionText>
+                <span>고양이 보러가기</span>
+              </S.ThirdPageOptionText>
+            </S.OptionBox>
+            <S.OptionBox>
+              <S.ThirdPageOptionText>
+                <span>상담하기</span>
+              </S.ThirdPageOptionText>
+            </S.OptionBox>
+          </S.OutsideOptionBox>
+          <br />
+          <S.CatImgObject>
+            <img src={cat} width="500" height="281.25" alt="left" />
+            <S.CuteTagBox>
+              <S.TagBoxText>#귀여움</S.TagBoxText>
+            </S.CuteTagBox>
+            <S.CatTagBox>
+              <S.TagBoxText>#고양이</S.TagBoxText>
+            </S.CatTagBox>
+          </S.CatImgObject>
+        </S.SecondObject>
       </S.SecondObject>
     </div>
   );
